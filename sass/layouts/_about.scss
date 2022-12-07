@@ -3,12 +3,12 @@
   padding-bottom: 94px;
 }
 
-.list-about {
+.about__list {
   display: flex;
   gap: 30px;
 }
 
-.about-icon {
+.about__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,5 +16,24 @@
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
+}
+
+.about__benefits {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.title__benefits {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 1.7143;
+  color: var(--text-color);
 }

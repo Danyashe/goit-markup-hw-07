@@ -2,20 +2,20 @@
   padding-bottom: 84px;
 }
 
-.list-example {
+.example__list {
   display: flex;
   gap: 30px;
 }
 
-.title-example {
+.example__title {
   margin-bottom: 50px;
 }
 
-.example-item {
+.example__item {
   position: relative;
 }
 
-.example-item-text {
+.example__text {
   position: absolute;
   bottom: 0;
   margin: 0;

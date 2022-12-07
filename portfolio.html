@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -265,17 +265,16 @@
     <footer class="footer">
       <div class="container footer-container">
         <div>
-          <a class="logo-footer" href="">
-            <span class="logo-first">Web</span>Studio</a
+          <a class="logo-footer" href=""
+            ><span class="logo-first">Web</span>Studio</a
           >
           <address class="contacts">
             <p class="contacts-text">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="list">
               <li class="contacts-title-footer">
-                <a class="contacts-title" href="info@devstudio.com">
-                  info@devstudio.com
-                </a>
-                <br />
+                <a class="contacts-title" href="info@devstudio.com"
+                  >info@devstudio.com</a
+                ><br />
               </li>
               <li>
                 <a class="contacts-title" href="+380961111111"
@@ -317,6 +316,23 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-modal-wrap">
+          <h2 class="footer-title">ПІДПИЩІТЬСЯ НА РОЗСИЛКУ</h2>
+          <form class="footer-modal">
+            <input
+              type="text"
+              name="footer-input"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-modal-btn">
+              Підписатися
+              <svg class="footer-modal-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-icon_send_footer"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
