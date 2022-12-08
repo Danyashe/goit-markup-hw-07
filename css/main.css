@@ -71,9 +71,6 @@ body {
 .menu {
   display: flex;
   gap: 50px;
-}
-
-.menu-list {
   margin-right: 318px;
 }
 
