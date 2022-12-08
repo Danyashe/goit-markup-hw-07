@@ -60,12 +60,11 @@
   justify-content: center;
   color: #afb1b8;
   transition: color var(--tra), background-color var(--tra);
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
 }
 
 .team-soc-icon {

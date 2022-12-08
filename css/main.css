@@ -73,7 +73,7 @@ body {
   gap: 50px;
 }
 
-.menu__list {
+.menu-list {
   margin-right: 318px;
 }
 
@@ -173,9 +173,6 @@ body {
   width: 1600px;
   background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-}
-
-.hero__container {
   margin: 0 auto;
 }
 
@@ -188,9 +185,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.hero__title-hero {
   margin-bottom: 30px;
 }
 
@@ -371,9 +365,7 @@ body {
   color: #afb1b8;
   transition: color var(--tra), background-color var(--tra);
 }
-
-.team-soc-link:hover,
-.team-soc-link:focus {
+.team-soc-link:hover, .team-soc-link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -406,22 +398,18 @@ body {
   color: #afb1b8;
   transition: color var(--tra), border-color var(--tra);
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border-color: #2196f3;
-}
-
-.clients-link:hover .clients-icon {
-  color: #2196f3;
-}
-
-.clients-link:focus .clients-icon {
-  color: #2196f3;
 }
 
 .clients-icon {
   fill: currentColor;
+}
+.clients-link:hover .clients-icon {
+  color: #2196f3;
+}
+.clients-link:focus .clients-icon {
+  color: #2196f3;
 }
 
 .list-portfolio-type {
@@ -444,9 +432,7 @@ body {
   font-family: inherit;
   transition: color var(--tra), background-color var(--tra), box-shadow var(--tra);
 }
-
-.filtr:hover,
-.filtr:focus {
+.filtr:hover, .filtr:focus {
   color: white;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px hsla(0deg, 0%, 0%, 0.25);
@@ -471,13 +457,7 @@ body {
   display: block;
   transition: box-shadow var(--tra);
 }
-
-.portfolio-link:hover .portfolio-top-text {
-  transform: translateY(0);
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -503,6 +483,9 @@ body {
   transform: translateY(100%);
   transition: transform 250ms linear;
   overflow: auto;
+}
+.portfolio-link:hover .portfolio-top-text {
+  transform: translateY(0);
 }
 
 .title-cards {
@@ -571,11 +554,12 @@ body {
 
 .footer-container {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 .footer-wrap {
   padding-top: 12px;
+  margin-left: 70px;
 }
 
 .footer-wrap h2 {
@@ -608,9 +592,7 @@ body {
   color: #ffffff;
   transition: background-color var(--tra);
 }
-
-.footer-link:hover,
-.footer-link:focus {
+.footer-link:hover, .footer-link:focus {
   background-color: #2196f3;
 }
 
@@ -703,11 +685,10 @@ body {
   justify-content: center;
 }
 
-.modal-close:focus svg {
+.modal-close:focus .modal-close-icon {
   fill: #2196f3;
 }
-
-.modal-close:hover svg {
+.modal-close:hover .modal-close-icon {
   fill: #2196f3;
 }
 
@@ -748,15 +729,10 @@ body {
   border-radius: 4px;
   padding-left: 42px;
 }
-
 .modal-input:focus {
   border-color: #2196f3;
   outline: #2196f3;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.modal-input:focus + .modal-icon {
-  fill: #2196f3;
 }
 
 .modal-icon {
@@ -764,6 +740,9 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
+}
+.modal-input:focus .modal-icon {
+  fill: #2196f3;
 }
 
 .modal-comment {
@@ -778,7 +757,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
   padding: 12px 16px;
 }
-
 .modal-comment:focus {
   border-color: #2196f3;
   outline: #2196f3;
@@ -796,11 +774,6 @@ body {
   margin-bottom: 30px;
   justify-content: center;
 }
-
-.check-link {
-  color: #2196f3;
-}
-
 .modal-check:checked + .check-text::before {
   background-color: #2196f3;
   border: none;
@@ -808,7 +781,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .check-text::before {
   content: "";
   width: 16px;
@@ -816,6 +788,10 @@ body {
   border: 2px solid #303030;
   border-radius: 2px;
   margin-right: 8px;
+}
+
+.check-link {
+  color: #2196f3;
 }
 
 .wrapper {
@@ -837,7 +813,6 @@ body {
   border-radius: 4px;
   border: none;
 }
-
 .modal-btn:focus {
   background-color: #188ce8;
 }

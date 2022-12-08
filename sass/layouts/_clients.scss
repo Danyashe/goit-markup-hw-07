@@ -19,21 +19,19 @@
   justify-content: center;
   color: #afb1b8;
   transition: color var(--tra), border-color var(--tra);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: #2196f3;
-}
-
-.clients-link:hover .clients-icon {
-  color: #2196f3;
-}
-
-.clients-link:focus .clients-icon {
-  color: #2196f3;
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+  }
 }
 
 .clients-icon {
   fill: currentColor;
+  .clients-link:hover & {
+    color: #2196f3;
+  }
+
+  .clients-link:focus & {
+    color: #2196f3;
+  }
 }
